@@ -48,7 +48,7 @@ def args_check(args):
 
     if not os.path.exists(args['spot_list']):
         raise Exception('flexImaging Spot List does not exist.')
-    if not os.path.splitext(args['spot_list'][1] != 'txt'):
+    if not os.path.splitext(args['spot_list'][1]) != 'txt':
         raise Exception('flexImaging Spot List is not a .txt file.')
 
 
