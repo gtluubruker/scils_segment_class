@@ -43,7 +43,7 @@ def args_check(args):
     """
     if not os.path.exists(args['scils']):
         raise Exception('SCiLS file does not exist.')
-    if not os.path.splitext(args['scils'][1] != 'slx'):
+    if not os.path.splitext(args['scils'][1]) != 'slx':
         raise Exception('SCiLS file is not a .slx file.')
 
     if not os.path.exists(args['spot_list']):
