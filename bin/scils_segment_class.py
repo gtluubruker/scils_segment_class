@@ -106,7 +106,7 @@ def main():
         scils_spot_list_df['y'] = fleximaging_spot_list_df['y']
 
         # Get dataframe containing spot IDs and raster IDs for the region named "single_cell_test" from the region tree.
-        roi = [i for i in region_tree.get_all_regions() if i.name.endswith('roi')]
+        roi = [i for i in region_tree.get_all_regions() if i.name.endswith(args['roi'])]
         if len(roi) <= 1:
             roi = roi[0]
         else:
